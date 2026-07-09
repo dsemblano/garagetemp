@@ -1,0 +1,18 @@
+# Created by trellis-cli v1.14.1
+# Documentation: https://roots.io/trellis/docs/wordpress-sites/
+
+wordpress_sites:
+  bionectarbioativos.com.br:
+    site_hosts:
+    - canonical: bionectarbioativos.test
+      redirects:
+      - www.bionectarbioativos.test
+    local_path: ../site
+    admin_email: admin@bionectarbioativos.test
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false

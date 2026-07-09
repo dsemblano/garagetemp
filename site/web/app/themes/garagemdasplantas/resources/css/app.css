@@ -1,0 +1,44 @@
+@import "tailwindcss" theme(static);
+@source "../../app/**/*.php";
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@plugin "@tailwindcss/typography";
+
+@layer utility {
+  .container {
+    container-type: inline-size;
+    margin-inline: auto;
+
+    padding-inline: clamp(1rem, 10vw, 10rem);
+  }
+}
+
+/* Cores */
+@theme {
+  --color-primary: #924123;
+  --color-primary-dark: #6A4A2E;
+  --color-secondary: #898F66;
+  --color-secondary-dark: #6E815D;
+  --color-accent: #B8C494;
+  --cor-fundo: #EBE5D9;
+}
+    /* Paleta primária
+    #924123
+    #A65C38
+    #8C6347
+
+    Paleta secondária
+    #898F66
+    Verde Oliva
+    #6E815D 
+    #C18060
+
+    Accent
+    pistachio
+    #B8C494
+    #9EB382 */
+
+body {
+    background-color: var(--cor-fundo);
+}
+
