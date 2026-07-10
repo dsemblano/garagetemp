@@ -1,0 +1,1 @@
+/srv/www/bionectarbioativos.com.br/current/web/app/plugins/query-monitor/wp-content/db.php

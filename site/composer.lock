@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e972654f5397e224d2da3aa49ddcd2e",
+    "content-hash": "044e116d6a1ce492cb4e99b54d399706",
     "packages": [
         {
             "name": "composer/installers",
@@ -1133,37 +1133,6 @@
                 "source": "https://plugins.svn.wordpress.org/contact-form-7"
             },
             "time": "2026-05-15T03:01:03+00:00"
-        },
-        {
-            "name": "wp-plugin/ewww-image-optimizer",
-            "version": "8.7.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/8.7.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.8.7.3.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0|~2.0"
-            },
-            "type": "wordpress-plugin",
-            "notification-url": "https://wp-packages.org/downloads",
-            "authors": [
-                {
-                    "name": "Shane Bishop"
-                }
-            ],
-            "description": "Comprehensive image optimization with WebP, AVIF, Lazy Load, and more. Optimize images automatically for Faster Sites and Happy Visitors.",
-            "homepage": "https://wordpress.org/plugins/ewww-image-optimizer/",
-            "support": {
-                "changelog": "https://wordpress.org/plugins/ewww-image-optimizer/#developers",
-                "issues": "https://wordpress.org/support/plugin/ewww-image-optimizer",
-                "source": "https://plugins.svn.wordpress.org/ewww-image-optimizer"
-            },
-            "time": "2026-07-09T20:35:46+00:00"
         },
         {
             "name": "wp-plugin/fast-cart",
