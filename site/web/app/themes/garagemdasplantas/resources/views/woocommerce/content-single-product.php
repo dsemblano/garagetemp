@@ -31,7 +31,7 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'inline-block prose lg:prose-lg max-w-none', $product ); ?>>
+<div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'container inline-block prose lg:prose-lg max-w-none', $product ); ?>>
 
 	<?php
 	/**
