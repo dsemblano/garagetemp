@@ -18,14 +18,14 @@
                 
                 <div class="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
                     <!-- CTA Principal (Foco no E-commerce) - Ajustado com o hover do Tailwind v4 para manter o texto branco -->
-                    <a href="/catalogo"
+                    <a href="/loja"
                         class="inline-flex items-center justify-center px-6 py-3.5 border border-transparent text-base font-medium rounded-xl text-white hover:text-white bg-primary hover:bg-primary-dark/80 transition-colors duration-300 shadow-sm shadow-primary-900/20 text-center">
                         Explorar Catálogo
                     </a>
 
                     <!-- CTA Secundário (Foco no Serviço/WhatsApp) -->
                     <a href="#contato"
-                        class="inline-flex items-center justify-center px-6 py-3.5 border border-zinc-300 text-base font-medium rounded-xl text-zinc-700 bg-white hover:bg-zinc-50 hover:text-zinc-950 transition-all text-center">
+                        class="inline-flex items-center justify-center px-6 py-3.5 border border-primary text-base font-medium rounded-xl text-primary bg-transparent hover:text-secondary hover:border-secondary transition-all text-center">
                         Solicitar Projeto
                     </a>
                 </div>
