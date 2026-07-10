@@ -9,12 +9,12 @@ wordpress_sites:
       - www.staging.bionectarbioativos.com.br
     local_path: ../site
     branch: master
-    repo: git@github.com:dsemblano/garagemdasplantas.git
+    repo: git@github.com:dsemblano/garagetemp.git
     repo_subtree_path: site
     multisite:
       enabled: false
     ssl:
-      enabled: true
+      enabled: false
       provider: letsencrypt
     cache:
       enabled: false
