@@ -3,7 +3,7 @@
         <div id="banner-inner" class="flex flex-row py-4 justify-between lg:justify-start lg:items-center transition-all duration-300">
             @include('partials.logo')
             @if (has_nav_menu('primary_navigation'))
-                <nav id="banner-nav" class="nav-primary lg:w-full" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
+                <nav id="banner-nav" class="nav-primary lg:w-full font-sans" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
                     @include('partials.menu')
                 </nav>
             @endif
