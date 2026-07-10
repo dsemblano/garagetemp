@@ -20,7 +20,7 @@
                 <div class="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
                     <!-- CTA Principal (Foco no E-commerce) - Ajustado com o hover do Tailwind v4 para manter o texto branco -->
                     <a href="/loja"
-                        class="inline-flex items-center justify-center px-6 py-3.5 border border-transparent text-base font-medium rounded-xl text-accent hover:text-white bg-primary hover:bg-primary-light transition-colors duration-300 shadow-sm shadow-primary-900/20 text-center">
+                        class="inline-flex items-center justify-center px-6 py-3.5 border border-transparent text-base font-medium rounded-xl text-accent hover:text-white bg-primary hover:bg-secondary/90 transition-colors duration-300 shadow-sm shadow-primary-900/20 text-center">
                         Explorar Catálogo
                     </a>
 
