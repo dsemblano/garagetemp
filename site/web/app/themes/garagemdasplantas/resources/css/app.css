@@ -16,11 +16,11 @@
 
 /* Cores */
 @theme {
-  --color-primary: #3a4032;
+  --color-primary: #3E5F44;
   --color-primary-dark: #6A4A2E;
   --color-secondary: #a75933;
   --color-secondary-dark: #6E815D;
-  --color-accent: #B8C494;
+  --color-accent: #DDD6B9;
   --color-tertiary: #B8C494;
   --cor-fundo: #EBE5D9;
 
@@ -53,6 +53,8 @@
     #A75933
     // kombu green
     #3a4032
+    // Hunter Green
+    #3E5F44
 
     Paleta secondária
     #898F66

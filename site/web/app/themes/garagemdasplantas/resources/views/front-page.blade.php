@@ -10,7 +10,7 @@
             <div
                 class="prose lg:prose-lg prose-a:no-underline prose-h2:mt-0 prose-h2:text-xl text-left leading-loose flex flex-col w-full">
                 <h1 class="text-secondary text-4xl md:text-6xl lg:text-7xl">
-                    Tudo para o seu jardim na Garagem das Plantas
+                    Tudo para o seu jardim na <span class="text-primary">Garagem das Plantas</span>
                 </h1>
                 <h2 class="text-primary-dark">
                     Plantas ornamentais, insumos de qualidade e projetos paisagísticos. A sua solução completa para cultivar
@@ -20,7 +20,7 @@
                 <div class="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
                     <!-- CTA Principal (Foco no E-commerce) - Ajustado com o hover do Tailwind v4 para manter o texto branco -->
                     <a href="/loja"
-                        class="inline-flex items-center justify-center px-6 py-3.5 border border-transparent text-base font-medium rounded-xl text-white hover:text-white bg-primary hover:bg-primary-dark/80 transition-colors duration-300 shadow-sm shadow-primary-900/20 text-center">
+                        class="inline-flex items-center justify-center px-6 py-3.5 border border-transparent text-base font-medium rounded-xl text-accent hover:text-white bg-primary hover:bg-secondary/90 transition-colors duration-300 shadow-sm shadow-primary-900/20 text-center">
                         Explorar Catálogo
                     </a>
 
