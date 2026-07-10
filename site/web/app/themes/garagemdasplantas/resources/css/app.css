@@ -18,9 +18,10 @@
 @theme {
   --color-primary: #3E5F44;
   --color-primary-dark: #6A4A2E;
+  --color-primary-light: #A2A182;
   --color-secondary: #a75933;
-  --color-secondary-dark: #6E815D;
-  --color-accent: #DDD6B9;
+  --color-secondary-dark: #8E412E;
+  --color-accent: #F4ECE2;
   --color-tertiary: #B8C494;
   --cor-fundo: #EBE5D9;
 
@@ -55,16 +56,26 @@
     #3a4032
     // Hunter Green
     #3E5F44
+    // Dry Sage primaary-light
+    #A2A182
 
     Paleta secondária
     #898F66
     Verde Oliva
     #6E815D 
     #C18060
+    // Reddish Brown
+    #8E412E
+    // Cinnamon Wood
+    #BA6F4D
 
     Accent
     pistachio
     #B8C494
+    // Linen
+    #F4ECE2
+    // Power Pedal
+    #E6CEBC
     #9EB382 */
 
 
