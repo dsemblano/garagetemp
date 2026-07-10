@@ -154,29 +154,29 @@ add_filter('woocommerce_dropdown_variation_attribute_options_args', function ($a
 });
 
 // para o plugin pdf
-add_filter('wf_pklist_alter_billing_address', function($billing_address, $template_type, $order) {
+// add_filter('wf_pklist_alter_billing_address', function($billing_address, $template_type, $order) {
     
-    // Callback anônimo para validação de integridade do documento
-    $validate_doc = function($value, $type) {
-        $clean_value = preg_replace('/[^0-9]/', '', $value);
-        return ($type === 'cpf') ? (strlen($clean_value) === 11) : (strlen($clean_value) === 14);
-    };
+//     // Callback anônimo para validação de integridade do documento
+//     $validate_doc = function($value, $type) {
+//         $clean_value = preg_replace('/[^0-9]/', '', $value);
+//         return ($type === 'cpf') ? (strlen($clean_value) === 11) : (strlen($clean_value) === 14);
+//     };
 
-    $cpf  = $order->get_meta('_billing_cpf');
-    $cnpj = $order->get_meta('_billing_cnpj');
+//     $cpf  = $order->get_meta('_billing_cpf');
+//     $cnpj = $order->get_meta('_billing_cnpj');
 
-    // Injeção validada do CPF
-    if (!empty($cpf) && $validate_doc($cpf, 'cpf')) {
-        $billing_address['nectar_cpf'] = '<br><strong>CPF:</strong> ' . esc_html($cpf);
-    }
+//     // Injeção validada do CPF
+//     if (!empty($cpf) && $validate_doc($cpf, 'cpf')) {
+//         $billing_address['nectar_cpf'] = '<br><strong>CPF:</strong> ' . esc_html($cpf);
+//     }
 
-    // Injeção validada do CNPJ
-    if (!empty($cnpj) && $validate_doc($cnpj, 'cnpj')) {
-        $billing_address['nectar_cnpj'] = '<br><strong>CNPJ:</strong> ' . esc_html($cnpj);
-    }
+//     // Injeção validada do CNPJ
+//     if (!empty($cnpj) && $validate_doc($cnpj, 'cnpj')) {
+//         $billing_address['nectar_cnpj'] = '<br><strong>CNPJ:</strong> ' . esc_html($cnpj);
+//     }
 
-    return $billing_address;
-}, 10, 3);
+//     return $billing_address;
+// }, 10, 3);
 
 /**
  * Corrige o bug de imagem quebrada (googleusercontent) nos e-mails do WooCommerce/WebToffee

@@ -282,25 +282,25 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_single_ad
 /**
  * Adiciona CPF/CNPJ ao PDF da WebToffee (Filtro)
  */
-add_filter('wf_pklist_alter_billing_address', function($billing_address, $template_type, $order) {
-    $validate_doc = function($value, $type) {
-        $clean = preg_replace('/[^0-9]/', '', $value);
-        return ($type === 'cpf') ? (strlen($clean) === 11) : (strlen($clean) === 14);
-    };
+// add_filter('wf_pklist_alter_billing_address', function($billing_address, $template_type, $order) {
+//     $validate_doc = function($value, $type) {
+//         $clean = preg_replace('/[^0-9]/', '', $value);
+//         return ($type === 'cpf') ? (strlen($clean) === 11) : (strlen($clean) === 14);
+//     };
 
-    $cpf  = $order->get_meta('_billing_cpf');
-    $cnpj = $order->get_meta('_billing_cnpj');
+//     $cpf  = $order->get_meta('_billing_cpf');
+//     $cnpj = $order->get_meta('_billing_cnpj');
 
-    if (!empty($cpf) && $validate_doc($cpf, 'cpf')) {
-        $billing_address['nectar_cpf'] = '<br><strong>CPF:</strong> ' . esc_html($cpf);
-    }
+//     if (!empty($cpf) && $validate_doc($cpf, 'cpf')) {
+//         $billing_address['nectar_cpf'] = '<br><strong>CPF:</strong> ' . esc_html($cpf);
+//     }
 
-    if (!empty($cnpj) && $validate_doc($cnpj, 'cnpj')) {
-        $billing_address['nectar_cnpj'] = '<br><strong>CNPJ:</strong> ' . esc_html($cnpj);
-    }
+//     if (!empty($cnpj) && $validate_doc($cnpj, 'cnpj')) {
+//         $billing_address['nectar_cnpj'] = '<br><strong>CNPJ:</strong> ' . esc_html($cnpj);
+//     }
 
-    return $billing_address;
-}, 10, 3);
+//     return $billing_address;
+// }, 10, 3);
 
 /**
  * Adiciona CPF/CNPJ aos E-mails (Ação)

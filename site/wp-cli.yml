@@ -3,6 +3,6 @@ server:
   docroot: web
 
 @development:
-  ssh: vagrant@nectardaamazonia.test/srv/www/nectardaamazonia.com.br/current
+  ssh: vagrant@bionectarbioativos.test/srv/www/bionectarbioativos.com.br/current
 @staging:
-  ssh: web@206.189.200.210/srv/www/nectardaamazonia.com.br/current
+  ssh: web@192.34.59.167/srv/www/bionectarbioativos.com.br/current
