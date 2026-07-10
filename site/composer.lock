@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eab711e9dae903e8a8c0e5a1f6d3fb35",
+    "content-hash": "d436ae19f8342fda392f42ce38a46627",
     "packages": [
         {
             "name": "brick/math",
@@ -7137,6 +7137,36 @@
             "time": "2026-04-26T05:33:54+00:00"
         },
         {
+            "name": "wp-plugin/annasta-woocommerce-product-filters",
+            "version": "1.8.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/annasta-woocommerce-product-filters/",
+                "reference": "tags/1.8.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/annasta-woocommerce-product-filters.1.8.4.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0|~2.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://wp-packages.org/downloads",
+            "authors": [
+                {
+                    "name": "annastaa"
+                }
+            ],
+            "description": "All-in-one products search and filtering solution for your WooCommerce shop with rich features and customization options.",
+            "support": {
+                "changelog": "https://wordpress.org/plugins/annasta-woocommerce-product-filters/#developers",
+                "issues": "https://wordpress.org/support/plugin/annasta-woocommerce-product-filters",
+                "source": "https://plugins.svn.wordpress.org/annasta-woocommerce-product-filters"
+            },
+            "time": "2026-06-08T10:11:16+00:00"
+        },
+        {
             "name": "wp-plugin/autodescription",
             "version": "5.1.4",
             "source": {
@@ -7197,6 +7227,36 @@
                 "source": "https://plugins.svn.wordpress.org/basic-user-avatars"
             },
             "time": "2026-03-23T19:23:21+00:00"
+        },
+        {
+            "name": "wp-plugin/better-block-editor",
+            "version": "1.6.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/better-block-editor/",
+                "reference": "tags/1.6.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/better-block-editor.1.6.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0|~2.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://wp-packages.org/downloads",
+            "authors": [
+                {
+                    "name": "Dream Theme"
+                }
+            ],
+            "description": "Better Block Editor (BBE) — responsive layout controls, on-scroll animations, and pre-made site templates for Block Editor.",
+            "support": {
+                "changelog": "https://wordpress.org/plugins/better-block-editor/#developers",
+                "issues": "https://wordpress.org/support/plugin/better-block-editor",
+                "source": "https://plugins.svn.wordpress.org/better-block-editor"
+            },
+            "time": "2026-07-06T14:41:06+00:00"
         },
         {
             "name": "wp-plugin/contact-form-7",

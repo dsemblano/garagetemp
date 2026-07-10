@@ -8,7 +8,20 @@ php_version: "8.3"
 ntp_timezone: Etc/UTC
 ntp_manage_config: true
 www_root: /srv/www
+upload_max_filesize : 300M
+upload_max_size: 300M
+php_memory_limit: 768M
+php_upload_max_filesize: 300M
+php_post_max_size: 300M
+ntp_timezone: Etc/UTC
+ntp_manage_config: true
+www_root: /srv/www
 max_journal_size: 512M
+php_extensions_custom:
+  php8.3-gd: "{{ apt_package_state }}"
+  php8.3-curl: "{{ apt_package_state }}"
+  php8.3-soap: "{{ apt_package_state }}"
+
 
 # Values of raw_vars will be wrapped in `{% raw %}` to avoid templating problems if values include `{%` and `{{`.
 # Will recurse dicts/lists. `*` is wildcard for one or more dict keys, list indices, or strings. Example:

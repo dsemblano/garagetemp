@@ -21,6 +21,7 @@
   --color-secondary: #a75933;
   --color-secondary-dark: #6E815D;
   --color-accent: #B8C494;
+  --color-tertiary: #B8C494;
   --cor-fundo: #EBE5D9;
 
   --color-headingprimary: #FEBE15;
@@ -198,6 +199,8 @@ h1.product_title {
 } */
 
 p {
+  font-family: var(--font-p);
+  color: var(--color-p);
   word-break: break-word;
 }
 
@@ -291,4 +294,107 @@ p {
     transform: scale(1.1);
   }
 }
+
+
+/* Woocommerce */
+
+.page-description {
+  @apply mb-6;
+}
+
+.woocommerce-info {
+  @apply text-2xl;
+}
+
+.menu-item.fc-menu-item.menu-item-type-fc {
+  @apply text-secondary hover:text-primary;
+}
+
+.shrink {
+  @apply shadow-lg hover:shadow-xl;
+
+  a.brand {
+    @apply transition-all duration-300 max-w-[150px];
+  }
+
+  #banner-nav ul {
+    @apply text-lg;
+  }
+}
+
+.infixs-correios-automatico-calculator input.infixs-correios-automatico-input {
+  font-size: smaller;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: var(--color-correios);
+  max-width: 180px;
+  letter-spacing: 1px;
+  height: 38px;
+  font-size: 16px;
+  padding: 0 5px 0 25px;
+  margin: 0;
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button.alt,
+:where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce button.button {
+  @apply bg-correios hover:bg-correios text-gray-200 hover:text-yellow-400! px-4 py-2 rounded transition font-light content-center;
+
+  font-size: smaller;
+}
+
+/* .main-woo {
+  @apply bg-pink-600;
+} */
+
+.awf-togglable-preset-btn {
+  @apply bg-tertiary hover:bg-tertiary text-white px-4 py-2 rounded-lg transition duration-300 hover:brightness-150;
+}
+
+/* Limita o contêiner principal da galeria de fotos no single product */
+.single-product .woocommerce-product-gallery {
+    max-width: 420px; /* Largura ideal para renderizar uma garrafa sem ocupar a tela inteira */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Garante que a imagem se comporte bem dentro do slider nativo */
+.single-product .woocommerce-product-gallery__image img {
+    max-height: 550px; /* Impede que garrafas muito altas empurrem o layout */
+    width: auto !important; /* Mantém a proporção perfeita da garrafa */
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/* Container do formulário de compra do WooCommerce */
+.single-product form.cart {
+    @apply flex items-center gap-3 mt-6;
+}
+
+/* 1. O INPUT DE QUANTIDADE */
+.single-product form.cart .quantity {
+    @apply relative flex items-center bg-neutral-100 rounded-lg border border-neutral-200/60 overflow-hidden h-11;
+}
+
+/* Estilizando o campo numérico em si */
+.single-product form.cart .quantity input[type="number"] {
+    @apply w-14 bg-transparent text-center text-sm font-semibold text-neutral-800 border-none focus:ring-0 focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none;
+}
+
+/* 2. O BOTÃO "COMPRAR" (Single Add To Cart Button) */
+.single-product form.cart .single_add_to_cart_button {
+    /* Troquei o azul genérico por um tom terroso/sofisticado alinhado ao seu projeto */
+    @apply h-11 px-8 bg-[#8B5A2B] hover:bg-[#606C38] text-white font-semibold text-sm tracking-wide uppercase rounded-lg shadow-sm transition-all duration-200 ease-in-out cursor-pointer flex items-center justify-center;
+}
+
+/* Ajuste sutil para o mobile: ocupa tudo se a tela for muito pequena */
+@media (max-width: 640px) {
+    .single-product form.cart {
+        @apply w-full justify-between;
+    }
+    .single-product form.cart .single_add_to_cart_button {
+        @apply flex-1 ml-2;
+    }
+}
+
+
 

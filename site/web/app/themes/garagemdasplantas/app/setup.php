@@ -237,38 +237,29 @@ add_action('woocommerce_single_product_summary', function () {
     echo view('woocommerce.single.specs')->render();
 }, 25);
 
+// add_action('woocommerce_single_product_summary', function () {
+//   echo view('woocommerce.single.cta')->render();
+// }, 30);
 
-// add_action('wp_enqueue_scripts', function () {
-//     if (!is_page(array('contato', 'biofabrica-orcamento', 'orcamento-instalacao-de-meliponarios'))) {
-//         wp_dequeue_script('contact-form-7');
-//         wp_dequeue_style('contact-form-7');
+// add_action('mytheme_product_cta', function () {
+//   echo view('woocommerce.single.cta')->render();
+// });
 
-//         /* these are both needed */
-//         wp_dequeue_script('wpcf7-recaptcha');
-//         wp_dequeue_script('google-recaptcha');
-//     }
-// }, 99);
+// Source - https://stackoverflow.com/a/64867693
+// Posted by Jeremiah Deasey
+// Retrieved 2026-01-10, License - CC BY-SA 4.0
 
 
-// Removing jquery
+add_action('wp_enqueue_scripts', function () {
+    if (!is_page(array('cadastre-sua-vinicola'))) {
+        wp_dequeue_script('contact-form-7');
+        wp_dequeue_style('contact-form-7');
 
-// add_action('wp_enqueue_scripts', function () {
-
-//     if (is_admin()) return;
-
-//     if (
-//         is_page('galeria') ||
-//         is_cart() ||
-//         is_checkout() ||
-//         is_account_page()
-//     ) {
-//         return;
-//     }
-
-//     wp_deregister_script('jquery');
-//     wp_deregister_script('jquery-core');
-//     wp_deregister_script('jquery-migrate');
-// }, 100);
+        /* these are both needed */
+        wp_dequeue_script('wpcf7-recaptcha');
+        wp_dequeue_script('google-recaptcha');
+    }
+}, 99);
 
 /**
  * Posiciona o formulário de variações exatamente antes das especificações
@@ -277,44 +268,3 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 
 // A prioridade 60 costuma ser logo após a descrição curta e antes de blocos extras
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 60);
-
-// pdf
-/**
- * Adiciona CPF/CNPJ ao PDF da WebToffee (Filtro)
- */
-// add_filter('wf_pklist_alter_billing_address', function($billing_address, $template_type, $order) {
-//     $validate_doc = function($value, $type) {
-//         $clean = preg_replace('/[^0-9]/', '', $value);
-//         return ($type === 'cpf') ? (strlen($clean) === 11) : (strlen($clean) === 14);
-//     };
-
-//     $cpf  = $order->get_meta('_billing_cpf');
-//     $cnpj = $order->get_meta('_billing_cnpj');
-
-//     if (!empty($cpf) && $validate_doc($cpf, 'cpf')) {
-//         $billing_address['nectar_cpf'] = '<br><strong>CPF:</strong> ' . esc_html($cpf);
-//     }
-
-//     if (!empty($cnpj) && $validate_doc($cnpj, 'cnpj')) {
-//         $billing_address['nectar_cnpj'] = '<br><strong>CNPJ:</strong> ' . esc_html($cnpj);
-//     }
-
-//     return $billing_address;
-// }, 10, 3);
-
-/**
- * Adiciona CPF/CNPJ aos E-mails (Ação)
- * Corrigido para evitar o Parse Error de string inesperada
- */
-add_action('woocommerce_email_customer_details', function($order, $sent_to_admin, $plain_text) {
-    $cpf  = $order->get_meta('_billing_cpf');
-    $cnpj = $order->get_meta('_billing_cnpj');
-
-    // Usamos printf para garantir que o HTML seja tratado como string
-    if ($cpf) {
-        printf('<p><strong>CPF:</strong> %s</p>', esc_html($cpf));
-    }
-    if ($cnpj) {
-        printf('<p><strong>CNPJ:</strong> %s</p>', esc_html($cnpj));
-    }
-}, 25, 3);
