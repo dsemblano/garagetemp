@@ -57,6 +57,15 @@ add_filter('wc_better_shipping_calculator_for_brazil_postcode_label', function (
   return 'Calcule o frete';
 });
 
+add_filter('gettext', function ($translated_text, $text, $domain) {
+  // Só modifica se estiver na página do carrinho
+  if (is_cart() && $translated_text === 'Atualizar' && $domain === 'woocommerce') {
+    return 'Calcular Frete';
+  }
+
+  return $translated_text;
+}, 20, 3);
+
 add_filter('woocommerce_my_account_my_orders_actions', function ($actions, $order) {
   // Remove todas as ações da lista de pedidos
   if (is_wc_endpoint_url('order-received')) {
