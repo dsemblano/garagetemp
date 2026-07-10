@@ -48,6 +48,7 @@
     "wp-plugin/gtm-kit": ">=2.7.0",
     "wp-plugin/infixs-correios-automatico": "^1.7",
     "wp-plugin/print-invoices-packing-slip-labels-for-woocommerce": "^4.9",
+    "wp-plugin/query-monitor": "^4.0",
     "wp-plugin/redirection": ">=5.5.2",
     "wp-plugin/regenerate-thumbnails": ">=3.1.5",
     "wp-plugin/sales-analytics-for-woocommerce": "^2.5.3",
