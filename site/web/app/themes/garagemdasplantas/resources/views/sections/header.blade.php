@@ -1,11 +1,12 @@
-<header class="banner">
-  <a class="brand" href="{{ home_url('/') }}">
-    {{-- {!! $siteName !!} --}}
-  </a>
-
-  @if (has_nav_menu('primary_navigation'))
-    <nav class="nav-primary" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
-      {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav', 'echo' => false]) !!}
-    </nav>
-  @endif
+<header id="banner" class="banner w-full z-50 bg-fundo top-0 left-0 shadow">
+    <div class="container">
+        <div id="banner-inner" class="flex flex-row py-4 justify-between lg:justify-start lg:items-center transition-all duration-300">
+            @include('partials.logo')
+            @if (has_nav_menu('primary_navigation'))
+                <nav id="banner-nav" class="nav-primary lg:w-full" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
+                    @include('partials.menu')
+                </nav>
+            @endif
+        </div>
+    </div>
 </header>
