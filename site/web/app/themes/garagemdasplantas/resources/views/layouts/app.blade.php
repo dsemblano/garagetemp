@@ -13,10 +13,10 @@
         };
     </script> --}}
 
-    @if (is_front_page() || is_home())
+    {{-- @if (is_front_page() || is_home())
         <link rel="preload" fetchpriority="high" as="image"
             href="{{ Vite::asset('resources/images/meliponarios.webp') }}" type="image/webp">
-    @endif
+    @endif --}}
 
     <link rel="preload" href="{{ Vite::asset('resources/fonts/Poppins/Poppins-Regular.ttf') }}" as="font"
         type="font/ttf" crossorigin>
