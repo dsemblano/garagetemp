@@ -238,16 +238,16 @@ add_action('woocommerce_single_product_summary', function () {
 }, 25);
 
 
-add_action('wp_enqueue_scripts', function () {
-    if (!is_page(array('contato', 'biofabrica-orcamento', 'orcamento-instalacao-de-meliponarios'))) {
-        wp_dequeue_script('contact-form-7');
-        wp_dequeue_style('contact-form-7');
+// add_action('wp_enqueue_scripts', function () {
+//     if (!is_page(array('contato', 'biofabrica-orcamento', 'orcamento-instalacao-de-meliponarios'))) {
+//         wp_dequeue_script('contact-form-7');
+//         wp_dequeue_style('contact-form-7');
 
-        /* these are both needed */
-        wp_dequeue_script('wpcf7-recaptcha');
-        wp_dequeue_script('google-recaptcha');
-    }
-}, 99);
+//         /* these are both needed */
+//         wp_dequeue_script('wpcf7-recaptcha');
+//         wp_dequeue_script('google-recaptcha');
+//     }
+// }, 99);
 
 
 // Removing jquery

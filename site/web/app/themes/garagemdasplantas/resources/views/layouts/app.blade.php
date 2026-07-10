@@ -20,7 +20,7 @@
 
     <link rel="preload" href="{{ Vite::asset('resources/fonts/Poppins/Poppins-Regular.ttf') }}" as="font"
         type="font/ttf" crossorigin>
-    <link rel="author" type="text/plain" href="{{ Vite::asset('resources/fonts/humans.txt') }}" />
+    {{-- <link rel="author" type="text/plain" href="{{ Vite::asset('resources/fonts/humans.txt') }}" /> --}}
     {{-- @include('partials.gtag') --}}
     {{-- @include('partials.partytown')
     @include('partials.gtm') --}}
