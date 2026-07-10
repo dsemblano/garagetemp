@@ -8,14 +8,14 @@
 
             <!-- Removido o h-dvh e md:w-dvh daqui. O Grid cuida da largura automaticamente -->
             <div
-                class="prose lg:prose-lg prose-a:no-underline prose-h2:mt-0 prose-h2:text-xl text-left leading-loose flex flex-col w-full">
-                <h1 class="text-secondary-dark text-4xl md:text-6xl lg:text-7xl">
-                    Tudo para o seu jardim na <span class="text-primary">Garagem das Plantas</span>
+                class="prose lg:prose-lg prose-a:no-underline prose-h2:mt-0 prose-h2:text-xl text-left leading-loose flex flex-col w-full prose-h1:font-normal">
+                <h1 class="text-secondary-dark text-4xl md:text-6xl lg:text-7xl !font-sans">
+                    Tudo para o seu jardim na <span class="text-primary font-heading font-bold">Garagem das Plantas</span>
                 </h1>
-                <h2 class="text-primary-dark">
+                <p class=" text-2xl">
                     Plantas ornamentais, insumos de qualidade e projetos paisagísticos. A sua solução completa para cultivar
                     beleza e bem-estar.
-                </h2>
+                </p>
 
                 <div class="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
                     <!-- CTA Principal (Foco no E-commerce) - Ajustado com o hover do Tailwind v4 para manter o texto branco -->

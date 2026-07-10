@@ -35,11 +35,9 @@
   --color-correios: #046bd2;
   --color-p: #4B4B68;
   --color-h: #262626;
-  --font-heading: "Poppins-Regular", sans-serif;
-  --font-heading-bold: "Poppins-Black", sans-serif;
-  --font-sans: "Lato-Regular", sans-serif;
+  --font-heading: "Lora-Regular", serif;
+  --font-sans: "Outfit-Regular", sans-serif;
   --font-p: ui-sans-serif, system-ui, sans-serif;
-  --font-pbold: "Lato-Bold", sans-serif;
   --arrow-link: #D68778;
   --arrow-small: 480px;
   --arrow-medium: 768px;
@@ -215,8 +213,7 @@ h1.product_title {
 } */
 
 p {
-  font-family: var(--font-p);
-  color: var(--color-p);
+  font-family: var(--font-sans);
   word-break: break-word;
 }
 

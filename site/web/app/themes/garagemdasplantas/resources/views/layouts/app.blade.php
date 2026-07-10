@@ -1,5 +1,6 @@
 <!doctype html>
 <html @php(language_attributes())>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +19,9 @@
             href="{{ Vite::asset('resources/images/meliponarios.webp') }}" type="image/webp">
     @endif --}}
 
-    <link rel="preload" href="{{ Vite::asset('resources/fonts/Poppins/Poppins-Regular.ttf') }}" as="font"
+    <link rel="preload" href="{{ Vite::asset('resources/fonts/Lora/Lora-VariableFont_wght.ttf') }}" as="font"
+        type="font/ttf" crossorigin>
+    <link rel="preload" href="{{ Vite::asset('resources/fonts/Outfit/Outfit-VariableFont_wght.ttf') }}" as="font"
         type="font/ttf" crossorigin>
     {{-- <link rel="author" type="text/plain" href="{{ Vite::asset('resources/fonts/humans.txt') }}" /> --}}
     {{-- @include('partials.gtag') --}}
@@ -53,13 +56,13 @@
             @yield('content')
         </main>
 
-        
-      @hasSection('sidebar')
-        <aside class="sidebar">
-          @yield('sidebar')
-        </aside>
-      @endif
-        
+
+        @hasSection('sidebar')
+            <aside class="sidebar">
+                @yield('sidebar')
+            </aside>
+        @endif
+
 
         @include('sections.footer')
     </div>
