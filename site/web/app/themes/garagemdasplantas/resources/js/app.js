@@ -48,8 +48,8 @@ Alpine.start()
 // });
 
 // animate
-const element = document.querySelector('h1');
-element.classList.add('animate__animated', 'animate__flipInX');
+// const element = document.querySelector('h1');
+// element.classList.add('animate__animated', 'animate__flipInX');
 
 // run on load and resize (debounce in production)
 // function setVh() {
@@ -61,15 +61,15 @@ element.classList.add('animate__animated', 'animate__flipInX');
 
 
 // Arrow top
-document.addEventListener("DOMContentLoaded", function() {
-    //hide or show the "back to top" link
+// document.addEventListener("DOMContentLoaded", function() {
+//     //hide or show the "back to top" link
 
-    //smooth scroll to top
-    document.querySelector('.cd-top').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    });
-});
+//     //smooth scroll to top
+//     document.querySelector('.cd-top').addEventListener('click', function(event) {
+//         event.preventDefault();
+//         window.scrollTo({top: 0, behavior: 'smooth'});
+//     });
+// });
 
 // logocroll
 document.addEventListener("DOMContentLoaded", function() {

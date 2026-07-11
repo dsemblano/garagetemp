@@ -4,15 +4,19 @@
 
     <section id="hero" class="section-home bg-stone-50 overflow-hidden">
         <!-- Alterado para min-h-dvh para dar flexibilidade no mobile e desktop -->
-        <div class="container min-h-dvh grid grid-cols-1 lg:grid-cols-2 gap-12 py-12">
+        <div class="container min-h-dvh grid grid-cols-1 lg:grid-cols-2 gap-12 py-6">
 
             <!-- Removido o h-dvh e md:w-dvh daqui. O Grid cuida da largura automaticamente -->
             <div
-                class="prose lg:prose-lg prose-a:no-underline prose-h2:mt-0 prose-h2:text-xl text-left leading-loose flex flex-col w-full prose-h1:font-normal">
-                <h1 class="text-secondary-dark text-4xl md:text-6xl lg:text-7xl !font-sans">
-                    Tudo para o seu jardim na <span class="text-primary font-heading font-bold">Garagem das Plantas</span>
+                class="prose lg:prose-lg prose-p:my-0 prose-a:no-underline prose-h2:mt-0 prose-h2:text-xl text-left flex flex-col w-full prose-h1:font-normal">
+                <h1 class="text-primary text-4xl md:text-6xl lg:text-7xl !font-sans mb-4">
+                    Tudo para o seu jardim na <span
+                        class="font-heading font-bold animate__animated animate__flipInX animate__slow inline-block mt-6 uppercase">
+                        <span class="text-secondary-dark">Garagem das</span>
+                       <span class="text-primary">Plantas</span>
+                        </span>
                 </h1>
-                <p class=" text-2xl">
+                <p class=" text-2xl mt-0">
                     Plantas ornamentais, insumos de qualidade e projetos paisagísticos. A sua solução completa para cultivar
                     beleza e bem-estar.
                 </p>
@@ -81,7 +85,8 @@
 
                 <div class="mt-6 text-zinc-600 space-y-4 leading-relaxed">
                     <p>
-                        A <b>Garagem das Plantas</b> nasceu de um propósito simples, mas profundo: ser o ponto de encontro entre o
+                        A <b>Garagem das Plantas</b> nasceu de um propósito simples, mas profundo: ser o ponto de encontro
+                        entre o
                         concreto da cidade e a energia vital da natureza. O que começou como um espaço despretensioso de
                         cultivo transformou-se em uma curadoria completa para quem deseja transformar ambientes através do
                         verde.
@@ -89,7 +94,8 @@
                     <p>
                         Muito mais do que vender mudas, nós entendemos que cada ecossistema urbano é único. Por isso,
                         selecionamos a dedo desde <b>plantas ornamentais exuberantes</b> até <b>insumos, adubos e vasos
-                        profissionais</b>, garantindo que você tenha em mãos a base certa para ver o seu jardim prosperar com
+                            profissionais</b>, garantindo que você tenha em mãos a base certa para ver o seu jardim
+                        prosperar com
                         saúde e beleza.
                     </p>
                     <p>
