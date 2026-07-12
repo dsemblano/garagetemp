@@ -4,7 +4,7 @@
             {{-- Parent Menu Item Container --}}
             <li class="{{ $item->classes }} relative group transition-all duration-500 ease-in-out py-4">
                 <a href="{{ $item->url }}"
-                    class="px-3 py-2 rounded no-underline opacity-100 transition duration-300 inline-flex items-center hover:bg-mel/10 {{ $item->active ? 'text-mel font-semibold' : 'text-p' }}"
+                    class="px-3 py-2 rounded no-underline opacity-100 transition duration-300 inline-flex items-center hover:bg-mel/10 {{ $item->active ? 'text-primary font-semibold' : 'text-p' }}"
                     @if ($item->active || $item->activeAncestor) aria-current="{{ $item->active ? 'page' : 'true' }}" @endif>
                     {{ $item->label }}
                     
