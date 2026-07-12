@@ -4,7 +4,6 @@
 @source "../**/*.js";
 @plugin "@tailwindcss/typography";
 @import './fonts.css';
-@import 'animate.css';
 
 @layer utility {
   .container {
@@ -44,6 +43,22 @@
   --arrow-medium: 768px;
   --arrow-large: 1024px;
   --arrow-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 2. Amarre a animação dentro do tema do Tailwind v4 */
+@theme {
+  --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
 }
 
 /* Paleta primária

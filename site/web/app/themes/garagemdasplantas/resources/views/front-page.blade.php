@@ -9,14 +9,14 @@
             <!-- Removido o h-dvh e md:w-dvh daqui. O Grid cuida da largura automaticamente -->
             <div
                 class="prose lg:prose-lg prose-p:my-0 prose-a:no-underline prose-h2:mt-0 prose-h2:text-xl text-left flex flex-col w-full prose-h1:font-normal">
-                <h1 class="text-primary text-4xl md:text-6xl lg:text-7xl !font-sans mb-4">
+                <h1 class="text-primary text-4xl md:text-6xl lg:text-7xl !font-sans mb-4 opacity-0 motion-safe:animate-fade-in-up">
                     Tudo para o seu jardim na <span
-                        class="font-heading font-bold animate__animated animate__flipInX animate__slow inline-block mt-6 uppercase">
+                        class="font-heading font-bold inline-block mt-6 uppercase">
                         <span class="text-secondary-dark">Garagem das</span>
                        <span class="text-primary">Plantas</span>
                         </span>
                 </h1>
-                <p class=" text-2xl mt-0">
+                <p class="text-2xl mt-0">
                     Plantas ornamentais, insumos de qualidade e projetos paisagísticos. A sua solução completa para cultivar
                     beleza e bem-estar.
                 </p>
@@ -54,7 +54,7 @@
     </section>
 
     <!-- sections/quem-somos.blade.php -->
-    <section id="quem-somos" class="bg-stone-100 py-16 md:py-24 overflow-hidden">
+    <section id="quem-somos" class="bg-stone-100 py-16 md:py-24 overflow-hidden reveal-on-scroll delay-300">
         <div class="container grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
             <!-- Coluna da Imagem (Esquerda no Desktop para inverter o ritmo da página) -->
