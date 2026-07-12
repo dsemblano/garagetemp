@@ -63,7 +63,7 @@ if ( post_password_required() ) {
 		//  woocommerce_template_single_add_to_cart();
 		?>
 		    <!-- <div>
-				<h2 class="text-base lg:text-lg font-bold text-melescuro">Você pode calcular o frete aqui:</h2>
+				<h2 class="text-base lg:text-lg font-bold text-secondaryescuro">Você pode calcular o frete aqui:</h2>
 				<div class="calculo-frete"></div>
 			</div> -->
 	</div>

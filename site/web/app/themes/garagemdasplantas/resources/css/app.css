@@ -26,11 +26,10 @@
   --cor-fundo: #EBE5D9;
 
   --color-headingprimary: #FEBE15;
-  --color-mel: #D4AF37;
   --color-marrom: #402810;
   --color-verde: #294023;
   --color-fundo: #f5f5dc;
-  --color-melescuro: #A2571B;
+
   --color-offwhite: #FAFAF7;
   --color-correios: #046bd2;
   --color-p: #4B4B68;
@@ -359,7 +358,7 @@ body.sage {
 #fkcart-modal .fkcart-checkout-wrap #fkcart-checkout-button,
 .woo-better-button-current-style,
 .checkout-button {
-  background-color: var(--color-melescuro) !important;
+  background-color: var(--color-secondaryescuro) !important;
   color: white;
 
   &:hover {
@@ -440,8 +439,7 @@ body.sage {
 
   /* 2. O BOTÃO "COMPRAR" (Single Add To Cart Button) */
   .single-product form.cart .single_add_to_cart_button {
-    /* Troquei o azul genérico por um tom terroso/sofisticado alinhado ao seu projeto */
-    @apply h-11 px-8 bg-[#8B5A2B] hover:bg-[#606C38] text-white font-semibold text-sm tracking-wide uppercase rounded-lg shadow-sm transition-all duration-200 ease-in-out cursor-pointer flex items-center justify-center;
+    @apply h-11 px-8 bg-primary hover:bg-primary/80 text-white font-semibold text-sm tracking-wide uppercase rounded-lg shadow-sm transition-all duration-200 ease-in-out cursor-pointer flex items-center justify-center;
   }
 
   /* Ajuste sutil para o mobile: ocupa tudo se a tela for muito pequena */

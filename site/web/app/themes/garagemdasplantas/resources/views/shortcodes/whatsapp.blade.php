@@ -11,7 +11,7 @@
     href="{{ $whatsapp_url }}" 
     target="_blank" 
     rel="noopener noreferrer" 
-    class="hover:bg-mel/30 !inline-flex w-fit items-center gap-3 text-p font-semibold px-6 py-3.5 rounded-xl transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 no-underline {{ $class }}"
+    class="hover:bg-secondary/30 !inline-flex w-fit items-center gap-3 text-p font-semibold px-6 py-3.5 rounded-xl transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 no-underline {{ $class }}"
   >
         <svg class="w-5 h-5 fill-current flex-shrink-0" viewBox="0 0 48 48" version="1.1"
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

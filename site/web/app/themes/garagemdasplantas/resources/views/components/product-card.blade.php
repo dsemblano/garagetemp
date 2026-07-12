@@ -65,7 +65,7 @@
         {{-- PRICE + CTA --}}
         <div class="mt-auto flex flex-col items-center w-full">
             
-            <div class="price text-base lg:text-lg font-bold text-melescuro pb-4 pt-2">
+            <div class="price text-base lg:text-lg font-bold text-secondary pb-4 pt-2">
                 {!! $product->get_price_html() !!}
             </div>
 

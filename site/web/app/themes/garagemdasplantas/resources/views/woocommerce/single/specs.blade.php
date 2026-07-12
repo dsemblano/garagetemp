@@ -19,7 +19,7 @@
                 <div class="li-{{ $class_name }} flex flex-row" itemprop="additionalProperty" itemscope itemtype="https://schema.org/PropertyValue">
                     <div class="flex flex-col not-prose">
                         <dt class="text-gray-600" itemprop="name">{{ $name }}</dt>
-                        <dd class="font-bold text-melescuro" itemprop="value">{{ $value }}</dd>
+                        <dd class="font-bold text-secondaryescuro" itemprop="value">{{ $value }}</dd>
                     </div>
                 </div>
             @endforeach
